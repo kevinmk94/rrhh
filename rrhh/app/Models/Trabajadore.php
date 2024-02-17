@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Trabajador extends Model
+class Trabajadore extends Model
 {
     protected $fillable = [
         'dni',
@@ -21,7 +21,7 @@ class Trabajador extends Model
         'colegiatura',
         'fecha_ingreso',
         'fecha_baja',
-        'estado_trabajor',
+        'estado_trabajador',
         'estado_plataforma',
         'fecha_modificacion',
     ];

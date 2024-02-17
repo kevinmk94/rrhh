@@ -4,15 +4,22 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Trabajadore;
 
 class TrabajadorController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
-        return view('admin.trabajador.index');
+        $trabajadores = Trabajadore::where('estado_trabajador','!=','ELIMINADO')->orderBy('id','DESC')->paginate(10);
+        return view('admin.trabajador.index', compact('trabajadores'));
     }
 
     /**
