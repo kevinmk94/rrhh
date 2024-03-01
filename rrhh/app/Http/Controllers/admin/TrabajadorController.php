@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Trabajador;
 use Illuminate\Http\Request;
 
 class TrabajadorController extends Controller
@@ -12,6 +13,7 @@ class TrabajadorController extends Controller
      */
     public function index()
     {
+        $ingresos = Trabajador::paginate(10);
         return view('admin.trabajador.index');
     }
 
