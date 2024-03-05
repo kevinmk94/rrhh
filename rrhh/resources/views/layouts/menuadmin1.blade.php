@@ -19,7 +19,7 @@ License: You must have a valid license purchased only from themeforest(the above
 	<!--begin::Head-->
 	<head><base href="">
 		<meta charset="utf-8" />
-		<title>Metronic | Dashboard</title>
+		<title>Municipalidad Lucre | Panel</title>
 		<meta name="description" content="Updates and statistics" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<!--begin::Fonts-->
@@ -97,7 +97,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<ul class="menu-nav">
 											<li class="menu-item menu-item-open menu-item-here menu-item-submenu menu-item-rel menu-item-open menu-item-here" data-menu-toggle="click" aria-haspopup="true">
 												<a href="javascript:;" class="menu-link menu-toggle">
-													<span class="menu-text">Dashboard</span>
+													<span class="menu-text">Panel</span>
 													<i class="menu-arrow"></i>
 												</a>
 												<div class="menu-submenu menu-submenu-classic menu-submenu-left">
@@ -3730,7 +3730,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<!--begin::Heading-->
 									<div class="d-flex flex-column">
 										<!--begin::Title-->
-										<h2 class="text-white font-weight-bold my-2 mr-5">Dashboard</h2>
+										<h2 class="text-white font-weight-bold my-2 mr-5">Municipalidad Distrital de Lucre - Panel</h2>
 										<!--end::Title-->
 										<!--begin::Breadcrumb-->
 										<div class="d-flex align-items-center font-weight-bold my-2">
@@ -3741,11 +3741,11 @@ License: You must have a valid license purchased only from themeforest(the above
 											<!--end::Item-->
 											<!--begin::Item-->
 											<span class="label label-dot label-sm bg-white opacity-75 mx-3"></span>
-											<a href="" class="text-white text-hover-white opacity-75 hover-opacity-100">Dashboard</a>
+											<a href="" class="text-white text-hover-white opacity-75 hover-opacity-100">Panel</a>
 											<!--end::Item-->
 											<!--begin::Item-->
 											<span class="label label-dot label-sm bg-white opacity-75 mx-3"></span>
-											<a href="" class="text-white text-hover-white opacity-75 hover-opacity-100">Latest Updated</a>
+											<a href="" class="text-white text-hover-white opacity-75 hover-opacity-100">Inicio</a>
 											<!--end::Item-->
 										</div>
 										<!--end::Breadcrumb-->

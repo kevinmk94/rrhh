@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>One Music - Modern Music HTML5 Template</title>
+    <title>Recursos Humanos - Municipalidad D. de Lucre</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -60,11 +60,11 @@
                                 <ul>
                                     @if (Route::has('login'))
                                     @auth
-                                        <li> <a href="{{ url('/admin/home') }}" >home </a></li>
+                                        <li> <a href="{{ url('/admin/home') }}" >Administrador </a></li>
                                     @else
-                                        <li><a href="{{ route('login') }}" >Login</a></li>
+                                        <li><a href="{{ route('login') }}" >Inicio de Sesion</a></li>
                                     @if (Route::has('register'))
-                                        <li><a href="{{ route('register') }}" >Register</a></li>
+                                        <li><a href="{{ route('register') }}" >Registro de Usuario</a></li>
                                         @endif
                                     @endauth
                                     @endif
@@ -91,16 +91,16 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="hero-slides-content text-center">
-                                <h6 data-animation="fadeInUp" data-delay="100ms">Latest album</h6>
-                                <h2 data-animation="fadeInUp" data-delay="300ms">Beyond Time <span>Beyond Time</span></h2>
+                                <h6 data-animation="fadeInUp" data-delay="100ms">Plataforma</h6>
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Recursos Humanos</h2>
                                 @if (Route::has('login'))
                                     @auth
-                                        <a data-animation="fadeInUp" data-delay="500ms" href="{{ url('/admin/home') }}" class="btn oneMusic-btn mt-50">home <i class="fa fa-angle-double-right"></i></a>
+                                        <a data-animation="fadeInUp" data-delay="500ms" href="{{ url('/admin/home') }}" class="btn oneMusic-btn mt-50">Administrador <i class="fa fa-angle-double-right"></i></a>
                                     @else
-                                        <a data-animation="fadeInUp" data-delay="500ms" href="{{ route('login') }}" class="btn oneMusic-btn mt-50">Login <i class="fa fa-angle-double-right"></i></a>
+                                        <a data-animation="fadeInUp" data-delay="500ms" href="{{ route('login') }}" class="btn oneMusic-btn mt-50">Inicio de Sesion <i class="fa fa-angle-double-right"></i></a>
 
                                     @if (Route::has('register'))
-                                        <a data-animation="fadeInUp" data-delay="500ms" href="{{ route('register') }}" class="btn oneMusic-btn mt-50">Discover <i class="fa fa-angle-double-right"></i></a>
+                                        <a data-animation="fadeInUp" data-delay="500ms" href="{{ route('register') }}" class="btn oneMusic-btn mt-50"> Registro de Usuario <i class="fa fa-angle-double-right"></i></a>
 
                                         @endif
                                     @endauth
@@ -120,16 +120,16 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="hero-slides-content text-center">
-                                <h6 data-animation="fadeInUp" data-delay="100ms">Latest album</h6>
-                                <h2 data-animation="fadeInUp" data-delay="300ms">Colorlib Music <span>Colorlib Music</span></h2>
+                                <h6 data-animation="fadeInUp" data-delay="100ms">Plataforma</h6>
+                                <h2 data-animation="fadeInUp" data-delay="300ms">Recursos Humanos</span></h2>
                                 @if (Route::has('login'))
                                 @auth
-                                    <a data-animation="fadeInUp" data-delay="500ms" href="{{ url('/admin/home') }}" class="btn oneMusic-btn mt-50">home <i class="fa fa-angle-double-right"></i></a>
+                                    <a data-animation="fadeInUp" data-delay="500ms" href="{{ url('/admin/home') }}" class="btn oneMusic-btn mt-50">Administrador <i class="fa fa-angle-double-right"></i></a>
                                 @else
-                                    <a data-animation="fadeInUp" data-delay="500ms" href="{{ route('login') }}" class="btn oneMusic-btn mt-50">Login <i class="fa fa-angle-double-right"></i></a>
+                                    <a data-animation="fadeInUp" data-delay="500ms" href="{{ route('login') }}" class="btn oneMusic-btn mt-50">Inicio de Sesion <i class="fa fa-angle-double-right"></i></a>
 
                                 @if (Route::has('register'))
-                                    <a data-animation="fadeInUp" data-delay="500ms" href="{{ route('register') }}" class="btn oneMusic-btn mt-50">Discover <i class="fa fa-angle-double-right"></i></a>
+                                    <a data-animation="fadeInUp" data-delay="500ms" href="{{ route('register') }}" class="btn oneMusic-btn mt-50">Registro de Usuario<i class="fa fa-angle-double-right"></i></a>
 
                                     @endif
                                 @endauth
