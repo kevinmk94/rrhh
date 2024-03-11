@@ -13,22 +13,23 @@ return new class extends Migration
     {
         Schema::create('trabajadores', function (Blueprint $table) {
             $table->id();
-            $table->string('dni');
-            $table->string('nombres');
-            $table->string('apellido_paterno');
-            $table->string('apellido_materno');
-            $table->date('fecha_nacimiento');
-            $table->string('edad');
-            $table->string('cargo');
-            $table->string('correo_electronico');
-            $table->string('direccion');
-            $table->string('profesion');
-            $table->string('colegiatura');
-            $table->date('fecha_ingreso');
-            $table->date('fecha_baja');
+            $table->string('dni_trabajador');
+            $table->string('nombres_trabajador');
+            $table->string('apellido_paterno_trabajador');
+            $table->string('apellido_materno_trabajador');
+            $table->date('fecha_nacimiento_trabajador');
+            $table->string('edad_trabajador');
+            $table->string('cargo_trabajador');
+            $table->string('correo_electronico_trabajador');
+            $table->string('celular_trabajador');
+            $table->string('direccion_trabajador');
+            $table->string('profesion_trabajador');
+            $table->string('colegiatura_trabajador');
+            $table->date('fecha_ingreso_trabajador');
+            $table->date('fecha_baja_trabajador');
             $table->string('estado_trabajador');
-            $table->string('estado_plataforma');
-            $table->date('fecha_modificacion');
+            $table->string('estado_plataforma_trabajador');
+            $table->date('fecha_modificacion_trabajador');
             $table->timestamps();
         });
     }
