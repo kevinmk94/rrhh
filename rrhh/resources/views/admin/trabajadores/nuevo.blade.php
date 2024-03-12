@@ -3870,37 +3870,52 @@ License: You must have a valid license purchased only from themeforest(the above
 															<form class="form mt-0 mt-lg-10" id="kt_form">
 																<!--begin: Wizard Step 1-->
 																<div class="pb-5" data-wizard-type="step-content" data-wizard-state="current">
-																	<div class="mb-10 font-weight-bold text-dark">Enter your Account Details</div>
+																	<div class="mb-10 font-weight-bold text-dark">Ingrese la Informacion del Trabajador</div>
 																	<!--begin::Input-->
 																	<div class="form-group">
-																		<label>First Name</label>
-																		<input type="text" class="form-control form-control-solid form-control-lg" name="fname" placeholder="First Name" value="John" />
-																		<span class="form-text text-muted">Please enter your first name.</span>
+																		<label>Documento Nacional de Identidad (DNI)</label>
+																		<input type="text" class="form-control form-control-solid form-control-lg" name="dni_trabajador" placeholder="dni_trabajador" value="{{ old('dni_trabajador') }}" />
+																		<span class="form-text text-muted">Por favor ingrese su DNI del trabajador.</span>
 																	</div>
 																	<!--end::Input-->
+																		<!--begin::Input-->
+																		<div class="form-group">
+																			<label>Nombres del Trabajador</label>
+																			<input type="text" class="form-control form-control-solid form-control-lg" name="nombres_trabajador" placeholder="nombres_trabajador" value="{{ old('nombres_trabajador') }}" />
+																			<span class="form-text text-muted">Por favor el Nombre del Trabajador.</span>
+																		</div>
+																		<!--end::Input-->
 																	<!--begin::Input-->
 																	<div class="form-group">
-																		<label>Last Name</label>
-																		<input type="text" class="form-control form-control-solid form-control-lg" name="lname" placeholder="Last Name" value="Wick" />
-																		<span class="form-text text-muted">Please enter your last name.</span>
+																		<label>Apellido Paterno del Trabajador</label>
+																		<input type="text" class="form-control form-control-solid form-control-lg" name="apellido_paterno_trabajador" placeholder="apellido_paterno_trabajador" value="{{ old('apellido_paterno_trabajador') }}" />
+																		<span class="form-text text-muted">Por favor el Apellido Paterno del Trabajador.</span>
 																	</div>
 																	<!--end::Input-->
+																			<!--begin::Input-->
+																			<div class="form-group">
+																				<label>Apellido Materno del Trabajador</label>
+																				<input type="text" class="form-control form-control-solid form-control-lg" name="apellido_materno_trabajador " placeholder="apellido_materno_trabajador " value="{{ old('apellido_materno_trabajador') }} " />
+																				<span class="form-text text-muted">Por favor el Apellido Materno del Trabajador.</span>
+																			</div>
+																			<!--end::Input-->
+																	
 																	<div class="row">
 																		<div class="col-xl-6">
 																			<!--begin::Input-->
 																			<div class="form-group">
-																				<label>Phone</label>
-																				<input type="tel" class="form-control form-control-solid form-control-lg" name="phone" placeholder="phone" value="+61412345678" />
-																				<span class="form-text text-muted">Please enter your phone number.</span>
+																				<label>fecha_nacimiento_trabajador</label>
+																				<input type="date" class="form-control form-control-solid form-control-lg" name="fecha_nacimiento_trabajador" placeholder="fecha_nacimiento_trabajador" value="{{ old('fecha_nacimiento_trabajador') }}" />
+																				<span class="form-text text-muted">Por Favor la Fecha de Nacimiento de Trabajador.</span>
 																			</div>
 																			<!--end::Input-->
 																		</div>
 																		<div class="col-xl-6">
 																			<!--begin::Input-->
 																			<div class="form-group">
-																				<label>Email</label>
-																				<input type="email" class="form-control form-control-solid form-control-lg" name="email" placeholder="Email" value="john.wick@reeves.com" />
-																				<span class="form-text text-muted">Please enter your email address.</span>
+																				<label>edad_trabajador</label>
+																				<input type="email" class="form-control form-control-solid form-control-lg" name="edad_trabajador" placeholder="edad_trabajador" value="{{ old('edad_trabajador') }}" />
+																				<span class="form-text text-muted">Por favor ingresar su Edad</span>
 																			</div>
 																			<!--end::Input-->
 																		</div>
@@ -3912,24 +3927,24 @@ License: You must have a valid license purchased only from themeforest(the above
 																	<div class="mb-10 font-weight-bold text-dark">Setup Your Address</div>
 																	<!--begin::Input-->
 																	<div class="form-group">
-																		<label>Address Line 1</label>
-																		<input type="text" class="form-control form-control-solid form-control-lg" name="address1" placeholder="Address Line 1" value="Address Line 1" />
-																		<span class="form-text text-muted">Please enter your Address.</span>
+																		<label>direccion_trabajador</label>
+																		<input type="text" class="form-control form-control-solid form-control-lg" name="direccion_trabajador" placeholder="direccion_trabajador" value="{{ old('direccion_trabajador') }}" />
+																		<span class="form-text text-muted">Por favor ingresar su Direccion del trabajador.</span>
 																	</div>
 																	<!--end::Input-->
 																	<!--begin::Input-->
 																	<div class="form-group">
-																		<label>Address Line 2</label>
-																		<input type="text" class="form-control form-control-solid form-control-lg" name="address2" placeholder="Address Line 2" value="Address Line 2" />
-																		<span class="form-text text-muted">Please enter your Address.</span>
+																		<label>correo_electronico_trabajador</label>
+																		<input type="text" class="form-control form-control-solid form-control-lg" name="correo_electronico_trabajador" placeholder="correo_electronico_trabajador" value="{{ old('correo_electronico_trabajador') }}" />
+																		<span class="form-text text-muted">Por favor ingresar su Direccion electronico.</span>
 																	</div>
 																	<!--end::Input-->
 																	<div class="row">
 																		<div class="col-xl-6">
 																			<!--begin::Input-->
 																			<div class="form-group">
-																				<label>Postcode</label>
-																				<input type="text" class="form-control form-control-solid form-control-lg" name="postcode" placeholder="Postcode" value="3000" />
+																				<label>profesion_trabajador</label>
+																				<input type="text" class="form-control form-control-solid form-control-lg" name="profesion_trabajador" placeholder="profesion_trabajador" value="{{ old('correo_electronico_trabajador') }}" />
 																				<span class="form-text text-muted">Please enter your Postcode.</span>
 																			</div>
 																			<!--end::Input-->
@@ -3937,9 +3952,9 @@ License: You must have a valid license purchased only from themeforest(the above
 																		<div class="col-xl-6">
 																			<!--begin::Input-->
 																			<div class="form-group">
-																				<label>City</label>
-																				<input type="text" class="form-control form-control-solid form-control-lg" name="state" placeholder="City" value="Melbourne" />
-																				<span class="form-text text-muted">Please enter your City.</span>
+																				<label>colegiatura_trabajador</label>
+																				<input type="text" class="form-control form-control-solid form-control-lg" name="colegiatura_trabajador" placeholder="colegiatura_trabajador" value="{{old('colegiatura_trabajador') }}" />
+																				<span class="form-text text-muted">Colegiatura_trabajador.</span>
 																			</div>
 																			<!--end::Input-->
 																		</div>
@@ -3948,8 +3963,8 @@ License: You must have a valid license purchased only from themeforest(the above
 																		<div class="col-xl-6">
 																			<!--begin::Input-->
 																			<div class="form-group">
-																				<label>State</label>
-																				<input type="text" class="form-control form-control-solid form-control-lg" name="state" placeholder="State" value="VIC" />
+																				<label>celular_trabajador</label>
+																				<input type="text" class="form-control form-control-solid form-control-lg" name="celular_trabajador" placeholder="celular_trabajador" value="{{old('celular_trabajador') }}" />
 																				<span class="form-text text-muted">Please enter your State.</span>
 																			</div>
 																			<!--end::Input-->
@@ -3957,11 +3972,11 @@ License: You must have a valid license purchased only from themeforest(the above
 																		<div class="col-xl-6">
 																			<!--begin::Select-->
 																			<div class="form-group">
-																				<label>Country</label>
-																				<select name="country" class="form-control form-control-solid form-control-lg">
+																				<label>Pension Alimenticia </label>
+																				<select name="pension_alimenticia_trabajador" class="form-control form-control-solid form-control-lg">
 																					<option value="">Select</option>
-																					<option value="AF">Afghanistan</option>
-																					<option value="ZW">Zimbabwe</option>
+																					<option value="SI">Si </option>
+																					<option value="NO">No</option>
 																				</select>
 																			</div>
 																			<!--end::Select-->
@@ -3972,7 +3987,23 @@ License: You must have a valid license purchased only from themeforest(the above
 																<!--begin: Wizard Step 3-->
 																<div class="pb-5" data-wizard-type="step-content">
 																	<div class="mb-10 font-weight-bold text-dark">Enter your Payment Details</div>
-																	<div class="row">
+																	
+																		<!--begin::Input-->
+																		<div class="form-group">
+																			<label>cargo_trabajador</label>
+																			<input type="text" class="form-control form-control-solid form-control-lg" name="cargo_trabajador" placeholder="cargo_trabajador" value="{{ old('cargo_trabajador') }}" />
+																			<span class="form-text text-muted">Por favor ingresar su Cargo del Trabajador.</span>
+																		</div>
+																		<!--end::Input-->
+
+																		<!--begin::Input-->
+																		<div class="form-group">
+																			<label>resolucion_trabajador</label>
+																			<input type="text" class="form-control form-control-solid form-control-lg" name="resolucion_trabajador" placeholder="resolucion_trabajador" value="{{ old('cargo_trabajador') }}" />
+																			<span class="form-text text-muted">Por favor ingresar su Cargo del Trabajador.</span>
+																		</div>
+																		<!--end::Input-->
+																	{{-- <div class="row">
 																		<div class="col-xl-6">
 																			<!--begin::Input-->
 																			<div class="form-group">
@@ -3991,35 +4022,36 @@ License: You must have a valid license purchased only from themeforest(the above
 																			</div>
 																			<!--end::Input-->
 																		</div>
-																	</div>
+																	</div> --}}
 																	<div class="row">
 																		<div class="col-xl-4">
 																			<!--begin::Input-->
 																			<div class="form-group">
-																				<label>Card Expiry Month</label>
-																				<input type="number" class="form-control form-control-solid form-control-lg" name="ccmonth" placeholder="Card Expiry Month" value="01" />
-																				<span class="form-text text-muted">Please enter your Card Expiry Month.</span>
+																				<label>estado_trabajador</label>
+																				<input type="text" class="form-control form-control-solid form-control-lg" name="estado_trabajador" placeholder="estado_trabajador" value="{{old('estado_trabajador') }}" />
+																				<span class="form-text text-muted">Por favor ingrese el estado del trabajador.</span>
 																			</div>
 																			<!--end::Input-->
 																		</div>
 																		<div class="col-xl-4">
 																			<!--begin::Input-->
 																			<div class="form-group">
-																				<label>Card Expiry Year</label>
-																				<input type="number" class="form-control form-control-solid form-control-lg" name="ccyear" placeholder="Card Expire Year" value="21" />
-																				<span class="form-text text-muted">Please enter your Card Expiry Year.</span>
+																				<label>fecha_ingreso_trabajador</label>
+																				<input type="date" class="form-control form-control-solid form-control-lg" name="fecha_ingreso_trabajador" placeholder="fecha_ingreso_trabajador" value="{{old('fecha_ingreso_trabajador') }}" />
+																				<span class="form-text text-muted">Por favor ingrese la fecha de ingreso del trabajador.</span>
 																			</div>
 																			<!--end::Input-->
 																		</div>
 																		<div class="col-xl-4">
 																			<!--begin::Input-->
 																			<div class="form-group">
-																				<label>Card CVV Number</label>
-																				<input type="password" class="form-control form-control-solid form-control-lg" name="cccvv" placeholder="Card CVV Number" value="123" />
-																				<span class="form-text text-muted">Please enter your Card CVV Number.</span>
+																				<label>fecha_baja_trabajador</label>
+																				<input type="date" class="form-control form-control-solid form-control-lg" name="fecha_baja_trabajador" placeholder="fecha_baja_trabajador" value="{{old('fecha_baja_trabajador') }}" />
+																				<span class="form-text text-muted">Por favor ingrese la fecha del trabajador.</span>
 																			</div>
 																			<!--end::Input-->
 																		</div>
+																		
 																	</div>
 																</div>
 																<!--end: Wizard Step 3-->
@@ -4061,6 +4093,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	</div>
 																	<!--end::Section-->
 																</div>
+															</form>
 																<!--end: Wizard Step 4-->
 																<!--begin: Wizard Actions-->
 																<div class="d-flex justify-content-between border-top mt-5 pt-10">
@@ -4068,12 +4101,17 @@ License: You must have a valid license purchased only from themeforest(the above
 																		<button type="button" class="btn btn-light-primary font-weight-bold text-uppercase px-9 py-4" data-wizard-type="action-prev">Previous</button>
 																	</div>
 																	<div>
-																		<button type="button" class="btn btn-success font-weight-bold text-uppercase px-9 py-4" data-wizard-type="action-submit">Submit</button>
+																		<button type="submit" class="btn btn-success font-weight-bold text-uppercase px-9 py-4" data-wizard-type="action-submit">Submit</button>
 																		<button type="button" class="btn btn-primary font-weight-bold text-uppercase px-9 py-4" data-wizard-type="action-next">Next</button>
 																	</div>
+																
+																	<input type="hidden" class="form-control form-control-solid form-control-lg" name="estado_plataforma_trabajador" placeholder="estado_plataforma_trabajador" value="ACTIVO" />
+																	<input type="hidden" class="form-control form-control-solid form-control-lg" name="estado_plataforma_trabajador" placeholder="estado_plataforma_trabajador" value="ACTIVO" />
+																	
+
 																</div>
 																<!--end: Wizard Actions-->
-															</form>
+														
 															<!--end: Wizard Form-->
 														</div>
 													</div>
@@ -5022,8 +5060,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 </h3>
                 </div>
                 <!--begin::Form-->
-                <form class="form" method="POST" action="{{ url('') }}/admin/trabajadores" enctype="multipart/form-data">
-                    @csrf
+                <form action="">
                     <div class="card-body">                      
                     <div class="form-group row">
                         <label class="col-form-label text-right col-lg-5 col-sm-12">dni_trabajador</label>
@@ -5097,6 +5134,16 @@ License: You must have a valid license purchased only from themeforest(the above
                             </div>
                         </div>
                     </div>
+					<div class="form-group row">
+                        <label class="col-form-label text-right col-lg-5 col-sm-12">celular_trabajador</label>
+                        <div class="col-lg-4 col-md-7 col-sm-12 is-valid">
+                            <div class="typeahead">
+                            <input class="form-control "  type="text" placeholder="celular_trabajador" name="celular_trabajador" value="{{ old('celular_trabajador') }}"/>
+                            </div>
+                        </div>
+                    </div>
+					
+					
                     <div class="form-group row">
                         <label class="col-form-label text-right col-lg-5 col-sm-12">profesion_trabajador</label>
                         <div class="col-lg-4 col-md-7 col-sm-12 is-valid">
